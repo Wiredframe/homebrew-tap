@@ -2,12 +2,12 @@
 
 ```
 brew tap wiredframe/tap
-brew install --cask wiredframe/tap/simple-comic
+brew install --cask simple-comic-paper
 ```
 
 ## Casks
 
-- **simple-comic** — [Simple Comic](https://github.com/Wiredframe/Simple-Comic), the fork with a
+- **simple-comic-paper** — [Simple Comic](https://github.com/Wiredframe/Simple-Comic), the fork with a
   paper effect and a library. Same app and same install location as Homebrew's own
   `simple-comic` cask, so the two conflict by design; this one is built from
   `Wiredframe/Simple-Comic`.
