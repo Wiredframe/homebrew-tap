@@ -2,8 +2,11 @@
 
 ```
 brew tap wiredframe/tap
+brew trust --cask wiredframe/tap/simple-comic-paper
 brew install --cask simple-comic-paper
 ```
+
+Homebrew asks you to trust a tap before it will load casks from outside its own repositories.
 
 ## Casks
 
