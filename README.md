@@ -19,15 +19,16 @@ That is asked once per cask:
 
 ```
 brew trust --cask wiredframe/tap/kontor
-brew install --cask --no-quarantine kontor
+brew install --cask kontor
 
 brew trust --cask wiredframe/tap/simple-comic-paper
 brew install --cask simple-comic-paper
 ```
 
-Neither app is notarised by Apple — notarising ties every release to a paid membership. macOS
-therefore quarantines the download. `simple-comic-paper` clears that flag itself after installing;
-`kontor` expects `--no-quarantine`, or a right-click → **Open** on first launch.
+Neither app is notarised by Apple, because notarising ties every release to a paid membership, so
+macOS quarantines both downloads. Homebrew 6 removed the `--no-quarantine` flag and a cask cannot
+opt out of quarantine on its own, so both casks clear the attribute after installing. That is what
+lets the apps start normally.
 
 `simple-comic-paper` deliberately conflicts with Homebrew's own `simple-comic` cask: same app, same
 place in `/Applications`, different build.
