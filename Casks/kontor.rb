@@ -1,6 +1,6 @@
 cask "kontor" do
-  version "3.2.6"
-  sha256 "50e3ca8bead6b77f909834da4bfa8e7a28bc881557dac3d29d2421ec2cc64894"
+  version "3.2.7"
+  sha256 "b227e80f3b1f9c5811b0931343cf998edec2404d2bc478b0df42392b2600c93f"
 
   url "https://github.com/Wiredframe/kontor-buchhaltung/releases/download/v#{version}/Kontor-#{version}.zip"
   name "Kontor"
