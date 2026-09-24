@@ -1,10 +1,20 @@
 # Wiredframe Homebrew tap
 
-One tap for Wiredframe's macOS apps. A tap is just a repository with a `Casks` folder, so there
-is no reason for each app to bring its own.
+One tap for Wiredframe's apps and command line tools. A tap is just a repository with a `Casks`
+and a `Formula` folder, so there is no reason for each app to bring its own.
 
 ```
 brew tap wiredframe/tap
+```
+
+## Formulae
+
+| Formula | Tool | |
+|---|---|---|
+| `los` | [los](https://github.com/Wiredframe/los) | Tiny launcher for everything you installed in the terminal |
+
+```
+brew install wiredframe/tap/los
 ```
 
 ## Casks
