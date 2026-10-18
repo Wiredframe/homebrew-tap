@@ -1,6 +1,6 @@
 cask "rectmangle" do
-  version "1.0.0"
-  sha256 "efa364a60c3ca56bc94076bf3f97c3c4f29e210b33d878c13843c8de0fbf289a"
+  version "1.0.1"
+  sha256 "0d47c4b680be94c24290772cb6775375ab1bc03fbdecdcd075d71b9246ec2c92"
 
   url "https://github.com/Wiredframe/rectmangle/releases/download/v#{version}/Rectmangle-#{version}.zip"
   name "Rectmangle"
