@@ -1,18 +1,19 @@
 cask "dropme" do
-  version "1.0.1"
-  sha256 "8205f8e8143daebfc321297dbaff962406651bf5a7b7c1f04169203bcd76e68d"
+  version "1.0.2"
+  sha256 "f87293f9ba27bd009c3829c14cd79f8f5130fdd016c2271dbfdb8ea703ffdcb3"
 
   url "https://github.com/Wiredframe/dropme/releases/download/v#{version}/DropMe-#{version}.zip"
   name "DropMe"
   desc "Private drop shelf: hold Shift while dragging files, no network, no telemetry"
   homepage "https://github.com/Wiredframe/dropme"
 
+  depends_on arch: :arm64
   depends_on macos: :sonoma
 
   app "DropMe.app"
 
   postflight_steps do
-    # DropMe is only ad-hoc signed and not notarized, so clear the quarantine flag the download
+    # DropMe is signed with a Developer ID but not notarized, so clear the quarantine flag the download
     # picks up; otherwise Gatekeeper blocks the first launch. The attribute is sometimes absent,
     # which xattr reports as an error, hence `must_succeed: false`.
     run "/usr/bin/xattr",
