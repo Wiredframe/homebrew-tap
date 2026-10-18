@@ -4,7 +4,7 @@ cask "rectmangle" do
 
   url "https://github.com/Wiredframe/rectmangle/releases/download/v#{version}/Rectmangle-#{version}.zip"
   name "Rectmangle"
-  desc "Minimal window manager with keyboard shortcuts, modelled on Rectangle, no network"
+  desc "Minimal window manager with keyboard shortcuts, modelled on Rectangle"
   homepage "https://github.com/Wiredframe/rectmangle"
 
   depends_on macos: :ventura
