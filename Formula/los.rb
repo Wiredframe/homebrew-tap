@@ -1,8 +1,8 @@
 class Los < Formula
   desc "Tiny launcher for everything you installed in the terminal"
   homepage "https://github.com/Wiredframe/los"
-  url "https://github.com/Wiredframe/los/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "aacd0f3317e82d6bd6439b18c6183e6df4420f3cba3647a0db02793dc8f2d385"
+  url "https://github.com/Wiredframe/los/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "9374a407b9e1869eb2471b3ab3543092ffc8649824369c0df624cdc33b611e1a"
   license "MIT"
 
   depends_on "fzf"
