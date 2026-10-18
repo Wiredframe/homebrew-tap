@@ -1,12 +1,13 @@
 cask "rectmangle" do
-  version "1.0.1"
-  sha256 "0d47c4b680be94c24290772cb6775375ab1bc03fbdecdcd075d71b9246ec2c92"
+  version "1.0.2"
+  sha256 "f02e544031a7af631c49bd6204a3d01ffbb432ee41a8f0ff0945c4550161b40f"
 
   url "https://github.com/Wiredframe/rectmangle/releases/download/v#{version}/Rectmangle-#{version}.zip"
   name "Rectmangle"
   desc "Minimal window manager with keyboard shortcuts, modelled on Rectangle"
   homepage "https://github.com/Wiredframe/rectmangle"
 
+  depends_on arch: :arm64
   depends_on macos: :ventura
 
   app "Rectmangle.app"
