@@ -1,6 +1,6 @@
 cask "dropme" do
-  version "1.0.0"
-  sha256 "2e9e8fe6d4b315444f8e238f9f88c8ffe9b7032c06635e44f4a929c5b4696031"
+  version "1.0.1"
+  sha256 "8205f8e8143daebfc321297dbaff962406651bf5a7b7c1f04169203bcd76e68d"
 
   url "https://github.com/Wiredframe/dropme/releases/download/v#{version}/DropMe-#{version}.zip"
   name "DropMe"
