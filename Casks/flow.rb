@@ -1,6 +1,6 @@
 cask "flow" do
-  version "1.0.1"
-  sha256 "37bb436be61eb3ea16e488fc50d61466ccece7411566802ed5e093b7117e725d"
+  version "1.0.2"
+  sha256 "371a7e53a655eb4ef8b5e8157e09ff1e69de9903f6bf5ac2ecccf6d7b08513f6"
 
   url "https://github.com/Wiredframe/flow/releases/download/v#{version}/Flow-#{version}.zip"
   name "Flow"
