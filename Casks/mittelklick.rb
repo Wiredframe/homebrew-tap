@@ -1,6 +1,6 @@
 cask "mittelklick" do
-  version "1.0.2"
-  sha256 "b9caded7f257c06dc3db5d9620ad1b8b102fb5f772bd1c2e66ccc72ec0130b8d"
+  version "1.0.3"
+  sha256 "377f6365f7c90907a64961dd5a1c3b575c861ea93efb501835324bd4ff5308f4"
 
   url "https://github.com/Wiredframe/mittelklick/releases/download/v#{version}/Mittelklick-#{version}.zip"
   name "Mittelklick"
