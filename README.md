@@ -25,7 +25,7 @@ brew install wiredframe/tap/los
 | `flow` | [Flow](https://github.com/Wiredframe/flow) | Tiny, fast photo and video viewer |
 | `kontor` | [Kontor](https://github.com/Wiredframe/kontor-buchhaltung) | Local, offline bookkeeping for freelancers |
 | `rectmangle` | [Rectmangle](https://github.com/Wiredframe/rectmangle) | Minimal window manager with keyboard shortcuts, no network |
-| `simple-comic-paper` | [Simple Comic](https://github.com/Wiredframe/Simple-Comic) | Comic viewer with a paper effect and a library |
+| `paper-comic-reader` | [Paper Comic Reader](https://github.com/Wiredframe/paper-comic-reader-mac) | Comic reader with a paper effect and a library |
 
 Homebrew will not load a cask from a tap outside its own repositories until you say you trust it.
 That is asked once per cask:
@@ -43,8 +43,8 @@ brew install --cask kontor
 brew trust --cask wiredframe/tap/rectmangle
 brew install --cask wiredframe/tap/rectmangle
 
-brew trust --cask wiredframe/tap/simple-comic-paper
-brew install --cask simple-comic-paper
+brew trust --cask wiredframe/tap/paper-comic-reader
+brew install --cask paper-comic-reader
 ```
 
 None of the apps is notarised by Apple, because notarising ties every release to a paid membership, so
@@ -52,5 +52,6 @@ macOS quarantines the downloads. Homebrew 6 removed the `--no-quarantine` flag a
 opt out of quarantine on its own, so the casks clear the attribute after installing. That is what
 lets the apps start normally.
 
-`simple-comic-paper` deliberately conflicts with Homebrew's own `simple-comic` cask: same app, same
-place in `/Applications`, different build.
+`paper-comic-reader` replaces `simple-comic-paper` (Simple Comic with a paper effect, up to 2.0).
+`cask_renames.json` maps the old token onto the new one, so `brew upgrade` moves an existing install
+across, and the app keeps its library because it keeps Simple Comic's bundle id.
