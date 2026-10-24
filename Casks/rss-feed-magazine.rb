@@ -1,6 +1,6 @@
 cask "rss-feed-magazine" do
-  version "1.1.2"
-  sha256 "b1fcc040fda08737d2fdeeca3294703a1300eb608d72ae8fe962381f29a9589f"
+  version "1.1.3"
+  sha256 "469dd4d36850ea4d473e5877ed0a065a44ba5cbf4e015fa8bd82fd8dfdff28c0"
 
   url "https://github.com/Wiredframe/rss-feed-magazine/releases/download/v#{version}/RSS-Feed-Magazine-#{version}.zip"
   name "RSS Feed Magazine"
