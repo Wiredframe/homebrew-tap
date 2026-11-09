@@ -1,6 +1,6 @@
 cask "haftnotiz" do
-  version "0.1.0"
-  sha256 "b6b19df07b6b1cb703a3cc7609294c866ffd0e55b53f05e4805eaa822aa53bb9"
+  version "0.1.1"
+  sha256 "541cfcb2f8d691a37181fcd731a79a5eac5aa2d0aff3daec39a9ceceab3a3683"
 
   url "https://github.com/Wiredframe/haftnotiz/releases/download/v#{version}/Haftnotiz-#{version}.zip"
   name "Haftnotiz"
